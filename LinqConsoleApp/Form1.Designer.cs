@@ -31,6 +31,8 @@
         {
             this.ResultsDataGridView = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Przyklad12Button = new System.Windows.Forms.Button();
+            this.Przyklad11Button = new System.Windows.Forms.Button();
             this.WynikTextBox = new System.Windows.Forms.TextBox();
             this.WartoscLabel = new System.Windows.Forms.Label();
             this.Przyklad10Button = new System.Windows.Forms.Button();
@@ -59,6 +61,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Przyklad12Button);
+            this.panel1.Controls.Add(this.Przyklad11Button);
             this.panel1.Controls.Add(this.WynikTextBox);
             this.panel1.Controls.Add(this.WartoscLabel);
             this.panel1.Controls.Add(this.Przyklad10Button);
@@ -78,17 +82,37 @@
             this.panel1.Size = new System.Drawing.Size(924, 72);
             this.panel1.TabIndex = 1;
             // 
+            // Przyklad12Button
+            // 
+            this.Przyklad12Button.Location = new System.Drawing.Point(495, 40);
+            this.Przyklad12Button.Name = "Przyklad12Button";
+            this.Przyklad12Button.Size = new System.Drawing.Size(75, 23);
+            this.Przyklad12Button.TabIndex = 14;
+            this.Przyklad12Button.Text = "Przykład 12";
+            this.Przyklad12Button.UseVisualStyleBackColor = true;
+            this.Przyklad12Button.Click += new System.EventHandler(this.Przyklad12Button_Click);
+            // 
+            // Przyklad11Button
+            // 
+            this.Przyklad11Button.Location = new System.Drawing.Point(414, 41);
+            this.Przyklad11Button.Name = "Przyklad11Button";
+            this.Przyklad11Button.Size = new System.Drawing.Size(75, 23);
+            this.Przyklad11Button.TabIndex = 13;
+            this.Przyklad11Button.Text = "Przykład 11";
+            this.Przyklad11Button.UseVisualStyleBackColor = true;
+            this.Przyklad11Button.Click += new System.EventHandler(this.Przyklad11Button_Click);
+            // 
             // WynikTextBox
             // 
-            this.WynikTextBox.Location = new System.Drawing.Point(605, 14);
+            this.WynikTextBox.Location = new System.Drawing.Point(666, 14);
             this.WynikTextBox.Name = "WynikTextBox";
-            this.WynikTextBox.Size = new System.Drawing.Size(307, 20);
+            this.WynikTextBox.Size = new System.Drawing.Size(246, 20);
             this.WynikTextBox.TabIndex = 12;
             // 
             // WartoscLabel
             // 
             this.WartoscLabel.AutoSize = true;
-            this.WartoscLabel.Location = new System.Drawing.Point(549, 17);
+            this.WartoscLabel.Location = new System.Drawing.Point(606, 17);
             this.WartoscLabel.Name = "WartoscLabel";
             this.WartoscLabel.Size = new System.Drawing.Size(50, 13);
             this.WartoscLabel.TabIndex = 11;
@@ -96,7 +120,7 @@
             // 
             // Przyklad10Button
             // 
-            this.Przyklad10Button.Location = new System.Drawing.Point(453, 41);
+            this.Przyklad10Button.Location = new System.Drawing.Point(333, 41);
             this.Przyklad10Button.Name = "Przyklad10Button";
             this.Przyklad10Button.Size = new System.Drawing.Size(75, 23);
             this.Przyklad10Button.TabIndex = 10;
@@ -106,7 +130,7 @@
             // 
             // Przyklad9Button
             // 
-            this.Przyklad9Button.Location = new System.Drawing.Point(372, 41);
+            this.Przyklad9Button.Location = new System.Drawing.Point(252, 41);
             this.Przyklad9Button.Name = "Przyklad9Button";
             this.Przyklad9Button.Size = new System.Drawing.Size(75, 23);
             this.Przyklad9Button.TabIndex = 9;
@@ -116,7 +140,7 @@
             // 
             // Przyklad8Button
             // 
-            this.Przyklad8Button.Location = new System.Drawing.Point(291, 41);
+            this.Przyklad8Button.Location = new System.Drawing.Point(171, 41);
             this.Przyklad8Button.Name = "Przyklad8Button";
             this.Przyklad8Button.Size = new System.Drawing.Size(75, 23);
             this.Przyklad8Button.TabIndex = 8;
@@ -126,7 +150,7 @@
             // 
             // Przyklad7Button
             // 
-            this.Przyklad7Button.Location = new System.Drawing.Point(210, 41);
+            this.Przyklad7Button.Location = new System.Drawing.Point(90, 41);
             this.Przyklad7Button.Name = "Przyklad7Button";
             this.Przyklad7Button.Size = new System.Drawing.Size(75, 23);
             this.Przyklad7Button.TabIndex = 7;
@@ -136,7 +160,7 @@
             // 
             // Przyklad6Button
             // 
-            this.Przyklad6Button.Location = new System.Drawing.Point(129, 41);
+            this.Przyklad6Button.Location = new System.Drawing.Point(495, 11);
             this.Przyklad6Button.Name = "Przyklad6Button";
             this.Przyklad6Button.Size = new System.Drawing.Size(75, 23);
             this.Przyklad6Button.TabIndex = 6;
@@ -146,7 +170,7 @@
             // 
             // Przyklad5Button
             // 
-            this.Przyklad5Button.Location = new System.Drawing.Point(453, 12);
+            this.Przyklad5Button.Location = new System.Drawing.Point(414, 12);
             this.Przyklad5Button.Name = "Przyklad5Button";
             this.Przyklad5Button.Size = new System.Drawing.Size(75, 23);
             this.Przyklad5Button.TabIndex = 5;
@@ -156,7 +180,7 @@
             // 
             // Przyklad4Button
             // 
-            this.Przyklad4Button.Location = new System.Drawing.Point(372, 12);
+            this.Przyklad4Button.Location = new System.Drawing.Point(333, 12);
             this.Przyklad4Button.Name = "Przyklad4Button";
             this.Przyklad4Button.Size = new System.Drawing.Size(75, 23);
             this.Przyklad4Button.TabIndex = 4;
@@ -166,7 +190,7 @@
             // 
             // Przyklad3Button
             // 
-            this.Przyklad3Button.Location = new System.Drawing.Point(291, 12);
+            this.Przyklad3Button.Location = new System.Drawing.Point(252, 12);
             this.Przyklad3Button.Name = "Przyklad3Button";
             this.Przyklad3Button.Size = new System.Drawing.Size(75, 23);
             this.Przyklad3Button.TabIndex = 3;
@@ -176,7 +200,7 @@
             // 
             // Przyklad2Button
             // 
-            this.Przyklad2Button.Location = new System.Drawing.Point(210, 12);
+            this.Przyklad2Button.Location = new System.Drawing.Point(171, 12);
             this.Przyklad2Button.Name = "Przyklad2Button";
             this.Przyklad2Button.Size = new System.Drawing.Size(75, 23);
             this.Przyklad2Button.TabIndex = 2;
@@ -186,7 +210,7 @@
             // 
             // Przyklad1Button
             // 
-            this.Przyklad1Button.Location = new System.Drawing.Point(129, 12);
+            this.Przyklad1Button.Location = new System.Drawing.Point(90, 12);
             this.Przyklad1Button.Name = "Przyklad1Button";
             this.Przyklad1Button.Size = new System.Drawing.Size(75, 23);
             this.Przyklad1Button.TabIndex = 1;
@@ -237,5 +261,7 @@
         private System.Windows.Forms.Button Przyklad10Button;
         private System.Windows.Forms.Label WartoscLabel;
         private System.Windows.Forms.TextBox WynikTextBox;
-        }
+        private System.Windows.Forms.Button Przyklad12Button;
+        private System.Windows.Forms.Button Przyklad11Button;
+    }
 }
