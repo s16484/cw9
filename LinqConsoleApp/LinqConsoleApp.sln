@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29926.136
+VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqConsoleApp", "LinqConsoleApp\LinqConsoleApp.csproj", "{BBCF6EB6-CE2E-4972-B649-A8BAB44C9B51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqConsoleApp", "LinqConsoleApp.csproj", "{A1B2D2B5-F99F-4562-9192-2434DD7C3A48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BBCF6EB6-CE2E-4972-B649-A8BAB44C9B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BBCF6EB6-CE2E-4972-B649-A8BAB44C9B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BBCF6EB6-CE2E-4972-B649-A8BAB44C9B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BBCF6EB6-CE2E-4972-B649-A8BAB44C9B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2D2B5-F99F-4562-9192-2434DD7C3A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2D2B5-F99F-4562-9192-2434DD7C3A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2D2B5-F99F-4562-9192-2434DD7C3A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2D2B5-F99F-4562-9192-2434DD7C3A48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6C03CA67-0122-4BB5-9567-AC164B622A88}
+		SolutionGuid = {363EA0BA-B538-479A-9956-B526FBC4D91B}
 	EndGlobalSection
 EndGlobal

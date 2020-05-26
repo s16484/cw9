@@ -1,20 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace LinqConsoleApp
 {
-    public class LinqSamples
+    public partial class Form1 : Form
     {
         public static IEnumerable<Emp> Emps { get; set; }
         public static IEnumerable<Dept> Depts { get; set; }
 
-        public LinqSamples()
+        public Form1()
         {
+            InitializeComponent();
             LoadData();
         }
 
-        public void LoadData()
+
+        private void LoadData()
         {
             var empsCol = new List<Emp>();
             var deptsCol = new List<Dept>();
@@ -169,11 +177,16 @@ namespace LinqConsoleApp
             empsCol.Add(e9);
             empsCol.Add(e10);
             Emps = empsCol;
+            ResultsDataGridView.DataSource = Emps;
 
             #endregion
 
         }
 
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
 
         /*
             Celem ćwiczenia jest uzupełnienie poniższych metod.
@@ -188,14 +201,9 @@ namespace LinqConsoleApp
         /// <summary>
         /// SELECT * FROM Emps WHERE Job = "Backend programmer";
         /// </summary>
-        public void Przyklad1()
+        private void Przyklad1Button_Click(object sender, EventArgs e)
         {
-            //var res = new List<Emp>();
-            //foreach(var emp in Emps)
-            //{
-            //    if (emp.Job == "Backend programmer") res.Add(emp);
-            //}
-
+            
             //1. Query syntax (SQL)
             var res = from emp in Emps
                       where emp.Job == "Backend programmer"
@@ -207,39 +215,46 @@ namespace LinqConsoleApp
 
 
             //2. Lambda and Extension methods
+
+
+            ResultsDataGridView.DataSource = res.ToList();
         }
 
         /// <summary>
         /// SELECT * FROM Emps Job = "Frontend programmer" AND Salary>1000 ORDER BY Ename DESC;
         /// </summary>
-        public void Przyklad2()
+        private void Przyklad2Button_Click(object sender, EventArgs e)
         {
-            
-
+   
+            //ResultsDataGridView.DataSource = res2.ToList();
         }
 
         /// <summary>
         /// SELECT MAX(Salary) FROM Emps;
         /// </summary>
-        public void Przyklad3()
+        private void Przyklad3Button_Click(object sender, EventArgs e)
         {
-          
+
+            //ResultsDataGridView.DataSource = res2.ToList();
+
         }
 
         /// <summary>
         /// SELECT * FROM Emps WHERE Salary=(SELECT MAX(Salary) FROM Emps);
         /// </summary>
-        public void Przyklad4()
+        private void Przyklad4Button_Click(object sender, EventArgs e)
         {
 
+            //ResultsDataGridView.DataSource = result;
         }
 
         /// <summary>
         /// SELECT ename AS Nazwisko, job AS Praca FROM Emps;
         /// </summary>
-        public void Przyklad5()
+        private void Przyklad5Button_Click(object sender, EventArgs e)
         {
 
+            //ResultsDataGridView.DataSource = result;
         }
 
         /// <summary>
@@ -247,35 +262,43 @@ namespace LinqConsoleApp
         /// INNER JOIN Depts ON Emps.Deptno=Depts.Deptno
         /// Rezultat: Złączenie kolekcji Emps i Depts.
         /// </summary>
-        public void Przyklad6()
+        private void Przyklad6Button_Click(object sender, EventArgs e)
         {
 
+            //ResultsDataGridView.DataSource = result;
         }
 
         /// <summary>
         /// SELECT Job AS Praca, COUNT(1) LiczbaPracownikow FROM Emps GROUP BY Job;
         /// </summary>
-        public void Przyklad7()
+        private void Przyklad7Button_Click(object sender, EventArgs e)
         {
 
+            //ResultsDataGridView.DataSource = result;
         }
 
         /// <summary>
         /// Zwróć wartość "true" jeśli choć jeden
         /// z elementów kolekcji pracuje jako "Backend programmer".
         /// </summary>
-        public void Przyklad8()
+        private void Przyklad8Button_Click(object sender, EventArgs e)
         {
-
+            /*
+            if (LINQ)
+            {
+                WynikTextBox.Text = "Backend programmer istnieje w kolekcji";
+            }
+             */
         }
 
         /// <summary>
         /// SELECT TOP 1 * FROM Emp WHERE Job="Frontend programmer"
         /// ORDER BY HireDate DESC;
         /// </summary>
-        public void Przyklad9()
+        private void Przyklad9Button_Click(object sender, EventArgs e)
         {
 
+            //ResultsDataGridView.DataSource = result;
         }
 
         /// <summary>
@@ -283,22 +306,10 @@ namespace LinqConsoleApp
         /// UNION
         /// SELECT "Brak wartości", null, null;
         /// </summary>
-        public void Przyklad10Button_Click()
+        private void Przyklad10Button_Click(object sender, EventArgs e)
         {
 
-        }
-
-        //Znajdź pracownika z najwyższą pensją wykorzystując metodę Aggregate()
-        public void Przyklad11()
-        {
-
-        }
-
-        //Z pomocą języka LINQ i metody SelectMany wykonaj złączenie
-        //typu CROSS JOIN
-        public void Przyklad12()
-        {
-
+            //ResultsDataGridView.DataSource = result;
         }
     }
 }
